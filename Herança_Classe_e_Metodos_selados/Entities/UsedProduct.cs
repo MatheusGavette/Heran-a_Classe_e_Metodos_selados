@@ -19,7 +19,7 @@ namespace Herança_Classe_e_Metodos_selados.Entities
                 + " (used) $ "
                 + Price
                 + " (Manufacture date: "
-                + ManufactureDate;
+                + ManufactureDate.ToString("dd//MM/yyyy");
         }
     }
 }

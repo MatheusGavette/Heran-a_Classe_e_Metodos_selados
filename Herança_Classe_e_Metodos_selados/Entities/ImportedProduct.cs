@@ -6,7 +6,7 @@ namespace Herança_Classe_e_Metodos_selados.Entities
     {
         public double CustomFee { get; set; }
 
-        public ImportedProduct (string name, double price, double customFee) : base (name, price)
+        public ImportedProduct(string name, double price, double customFee) : base(name, price)
         {
             CustomFee = customFee;
         }
@@ -20,7 +20,8 @@ namespace Herança_Classe_e_Metodos_selados.Entities
         {
             return base.ToString()
                 + $" (Custom Fee: $ "
-                + TotalPrice().ToString("F2", CultureInfo.InvariantCulture);
+                + TotalPrice().ToString("F2", CultureInfo.InvariantCulture)
+                + ") ";
         }
     }
 }
